@@ -1,0 +1,277 @@
+body{
+	margin:0;
+	color:rgb(254, 251, 251);
+	background:rgb(251, 186, 180);
+	font:300 18px/18px Roboto, sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.pull-left{float:left}
+.pull-right{float:right}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+
+.connect-wrap .extras span:before,
+.connect-wrap .extras span:after,
+.connect-wrap .smiley .face:before,
+.connect-wrap .smiley .face:after,
+.connect-wrap .smiley .face .eyes:before,
+.connect-wrap .smiley .face .eyes:after,
+.connect-wrap .smiley .legs:before,
+.connect-wrap .smiley .legs:after{
+	content:'';
+	position:absolute;
+}
+.connect-wrap{
+	top:50%;
+	left:50%;
+	width:174px;
+	height:174px;
+	position:fixed;
+	margin-top:-87px;
+	margin-left:-87px;
+	transition:all .4s ease-in-out 0s;
+}
+.connect-wrap .extras{
+	width:inherit;
+	height:inherit;
+	position:absolute;
+}
+.connect-wrap .extras span{
+	position:inherit;
+}
+.connect-wrap .extras span:nth-child(1),
+.connect-wrap .extras span:nth-child(5),
+.connect-wrap .extras span:nth-child(6),
+.connect-wrap .extras span:nth-child(7),
+.connect-wrap .extras span:nth-child(10),
+.connect-wrap .extras span:nth-child(12){
+	width:20px;
+	height:20px;
+}
+.connect-wrap .extras span:nth-child(1):before,
+.connect-wrap .extras span:nth-child(5):before,
+.connect-wrap .extras span:nth-child(6):before,
+.connect-wrap .extras span:nth-child(7):before,
+.connect-wrap .extras span:nth-child(10):before,
+.connect-wrap .extras span:nth-child(12):before,
+.connect-wrap .extras span:nth-child(1):after,
+.connect-wrap .extras span:nth-child(5):after,
+.connect-wrap .extras span:nth-child(6):after,
+.connect-wrap .extras span:nth-child(7):after,
+.connect-wrap .extras span:nth-child(10):after,
+.connect-wrap .extras span:nth-child(12):after{
+	top:50%;
+	left:50%;
+	width:inherit;
+	height:inherit;
+	background-color:#70bb96;
+}
+.connect-wrap .extras span:nth-child(1):before,
+.connect-wrap .extras span:nth-child(5):before,
+.connect-wrap .extras span:nth-child(6):before,
+.connect-wrap .extras span:nth-child(7):before,
+.connect-wrap .extras span:nth-child(10):before,
+.connect-wrap .extras span:nth-child(12):before{width:4px;margin-top:-10px;margin-left:-2px}
+.connect-wrap .extras span:nth-child(1):after,
+.connect-wrap .extras span:nth-child(5):after,
+.connect-wrap .extras span:nth-child(6):after,
+.connect-wrap .extras span:nth-child(7):after,
+.connect-wrap .extras span:nth-child(10):after,
+.connect-wrap .extras span:nth-child(12):after{height:4px;margin-top:-2px;margin-left:-10px}
+.connect-wrap .extras span:nth-child(1){left:-135px;bottom:10px}
+.connect-wrap .extras span:nth-child(5){top:-30px;left:-40px}
+.connect-wrap .extras span:nth-child(6){top:-125px;left:-105px}
+.connect-wrap .extras span:nth-child(7){top:-185px;left:30px}
+.connect-wrap .extras span:nth-child(10){top:-175px;left:275px}
+.connect-wrap .extras span:nth-child(12){top:100px;left:310px}
+.connect-wrap .extras span:nth-child(2),
+.connect-wrap .extras span:nth-child(3),
+.connect-wrap .extras span:nth-child(4),
+.connect-wrap .extras span:nth-child(8),
+.connect-wrap .extras span:nth-child(9),
+.connect-wrap .extras span:nth-child(11),
+.connect-wrap .extras span:nth-child(13){
+	border-radius:50%;
+	border:4px solid #70bb96;
+}
+.connect-wrap .extras span:nth-child(2),
+.connect-wrap .extras span:nth-child(4),
+.connect-wrap .extras span:nth-child(9),
+.connect-wrap .extras span:nth-child(11){width:15px;height:15px}
+.connect-wrap .extras span:nth-child(3),
+.connect-wrap .extras span:nth-child(8),
+.connect-wrap .extras span:nth-child(13){width:20px;height:20px}
+.connect-wrap .extras span:nth-child(2){top:95px;left:-75px}
+.connect-wrap .extras span:nth-child(3){top:55px;left:-195px}
+.connect-wrap .extras span:nth-child(4){top:-15px;left:-155px}
+.connect-wrap .extras span:nth-child(8){top:-45px;left:110px}
+.connect-wrap .extras span:nth-child(9){top:-160px;left:185px}
+.connect-wrap .extras span:nth-child(11){top:-20px;left:320px}
+.connect-wrap .extras span:nth-child(13){top:145px;left:255px}
+
+.connect-wrap .smiley{
+	z-index:100;
+	width:inherit;
+	height:inherit;
+	position:relative;
+	border-radius:10px;
+	background-color:#fff;
+}
+.connect-wrap .links{
+	z-index:-1;
+	width:inherit;
+	height:inherit;
+	position:absolute;
+}
+.connect-wrap .links a{
+	left:50%;
+	width:50px;
+	height:50px;
+	color:#48a078;
+	font-size:26px;
+	line-height:50px;
+	margin-left:-25px;
+	text-align:center;
+	position:absolute;
+	border-radius:50%;
+	text-decoration:none;
+	background-color:#fff;
+	transition:all .4s ease-in-out 0s;
+}
+.connect-wrap .links a:nth-child(1){
+	transform:translate(-180px,0);
+}
+.connect-wrap .links a:nth-child(2){
+	transform:translate(-100px,-100px);
+}
+.connect-wrap .links a:nth-child(3){
+	transform:translate(0,-150px);
+}
+.connect-wrap .links a:nth-child(4){
+	transform:translate(100px,-100px);
+}
+.connect-wrap .links a:nth-child(5){
+	transform:translate(180px,0);
+}
+.connect-wrap .smiley .face{
+	top:50%;
+	left:50%;
+	width:80px;
+	height:80px;
+	margin-top:-50px;
+	margin-left:-40px;
+	position:absolute;
+	border-radius:50%;
+	border:8px solid transparent;
+	border-bottom-color:#4592e9;
+}
+.connect-wrap .smiley .face:before,
+.connect-wrap .smiley .face:after{
+	width:8px;
+	height:8px;
+	bottom:3px;
+	border-radius:50%;
+	background-color:#4592e9;
+}
+.connect-wrap .smiley .face:before{left:2px}
+.connect-wrap .smiley .face:after{right:2px}
+
+.connect-wrap .smiley .face .eyes:before,
+.connect-wrap .smiley .face .eyes:after{
+	top:15px;
+	width:13px;
+	height:16px;
+	border-radius:50%;
+	background:#4592e9;
+}
+.connect-wrap .smiley .face .eyes:before{left:0}
+.connect-wrap .smiley .face .eyes:after{right:0}
+
+.connect-wrap .smiley .legs{
+	bottom:-40px;
+	height:12px;
+	width:inherit;
+	border-radius:50%;
+	position:absolute;
+	background-color:rgba(0,0,0,.2);
+}
+
+.connect-wrap .smiley .legs:before,
+.connect-wrap .smiley .legs:after{
+	width:12px;
+	bottom:5px;
+	height:35px;
+	background-color:#fff;
+	border-radius:0 0 12px 12px;
+}
+.connect-wrap .smiley .legs:before{left:50px}
+.connect-wrap .smiley .legs:after{right:50px}
+
+.connect-wrap{animation:smiley 4s infinite forwards}
+.connect-wrap .links a:nth-child(1){animation:link-1 4s infinite forwards}
+.connect-wrap .links a:nth-child(2){animation:link-2 4s infinite forwards}
+.connect-wrap .links a:nth-child(3){animation:link-3 4s infinite forwards}
+.connect-wrap .links a:nth-child(4){animation:link-4 4s infinite forwards}
+.connect-wrap .links a:nth-child(5){animation:link-5 4s infinite forwards}
+.connect-wrap .extras span{animation:extra 4s infinite forwards}
+.connect-wrap .extras span:nth-child(2),
+.connect-wrap .extras span:nth-child(5),
+.connect-wrap .extras span:nth-child(7){animation:extra-1 4s infinite forwards}
+.connect-wrap .extras span:nth-child(3),
+.connect-wrap .extras span:nth-child(8),
+.connect-wrap .extras span:nth-child(9),
+.connect-wrap .extras span:nth-child(13){animation:extra-2 4s infinite forwards}
+@keyframes smiley{
+	0%{transform:scale(0)}
+	20%{transform:scale(1)}
+	85%{transform:scale(1)}
+	100%{transform:translateX(1000px)}
+}
+@keyframes link-1{
+	0%{transform:translate(0) scale(0)}
+	30%{transform:translate(0) scale(0)}
+	40%{transform:translate(-180px,0) scale(1)}
+	100%{transform:translate(-180px,0) scale(1)}
+}
+@keyframes link-2{
+	0%{transform:translate(0) scale(0)}
+	30%{transform:translate(0) scale(0)}
+	50%{transform:translate(-100px,-100px) scale(1)}
+	100%{transform:translate(-100px,-100px) scale(1)}
+}
+@keyframes link-3{
+	0%{transform:translate(0) scale(0)}
+	30%{transform:translate(0) scale(0)}
+	40%{transform:translate(0,-150px) scale(1)}
+	100%{transform:translate(0,-150px) scale(1)}
+}
+@keyframes link-4{
+	0%{transform:translate(0) scale(0)}
+	30%{transform:translate(0) scale(0)}
+	50%{transform:translate(100px,-100px) scale(1)}
+	100%{transform:translate(100px,-100px) scale(1)}
+}
+@keyframes link-5{
+	0%{transform:translate(0) scale(0)}
+	30%{transform:translate(0) scale(0)}
+	40%{transform:translate(180px,0) scale(1)}
+	100%{transform:translate(180px,0) scale(1)}
+}
+@keyframes extra{
+	0%{transform:scale(0)}
+	40%{transform:scale(0)}
+	50%{transform:scale(1)}
+	100%{transform:scale(1)}
+}
+@keyframes extra-1{
+	0%{transform:scale(0)}
+	50%{transform:scale(0)}
+	60%{transform:scale(1)}
+	100%{transform:scale(1)}
+}
+@keyframes extra-2{
+	0%{transform:scale(0)}
+	55%{transform:scale(0)}
+	65%{transform:scale(1)}
+	100%{transform:scale(1)}
+}
